@@ -1,0 +1,54 @@
+Technical Skills
+As a student passionate about technology and innovation, I’ve developed a solid foundation across multiple domains, with a focus on AI, robotics, and full-stack development. I approach most of my projects using AI-assisted coding tools and copilots, enabling rapid prototyping and efficient development even in areas where I’m still gaining depth.
+
+Technical Skills:
+Started coding and prototyping with robotics tools in 5th–6th grade with Python, took a 3-year break for JEE prep, and resumed with a new AI-first approach at IIIT Hyderabad.
+I focus on concepts, abstraction, and building products, using AI tools to code efficiently. Not interested in low-level intricacies—I'm a hard worker driven by innovation and outcomes.
+
+AI & Machine Learning:
+Proficiency: Intermediate (Applied with AI tools)
+
+Libraries: PyTorch, TensorFlow, Hugging Face, Scikit-learn, OpenCV, Pandas, NumPy
+
+Concepts: Fine-tuning (LoRA/QLoRA), RAG, Quantization, CNNs, RNNs, multi-agent systems
+
+Frameworks: LangChain, LangGraph, FAISS, ChromaDB
+
+Programming Languages:
+Proficiency: Beginner–Intermediate
+
+Python, C, C++, JavaScript, Bash, SQL, TypeScript, HTML, x86 Assembly (basics)
+
+
+Software Development
+Proficiency: Beginner–Intermediate (AI-assisted)(know basics and have used them in projects)
+
+Frontend: React, Next.js, React Native
+
+Backend: FastAPI, Flask, Express.js
+
+Databases: MongoDB, PostgreSQL, Firebase
+
+Tools: Git , Docker , AI copilots for rapid prototyping
+
+🔧 IoT & Embedded Systems
+Proficiency: Beginner–Intermediate
+
+Platforms: ESP32, Raspberry Pi, Arduino
+
+Protocols: MQTT, REST APIs, Bluetooth/Wi-Fi
+
+Applications: Motion tracking, edge AI, robot navigation
+
+
+Math & Core CS:
+Discrete Math, Linear Algebra, Probability, Real Analysis, Calculus
+
+Data Structures & Algorithms, Computer Systems, IoT
+
+
+Learning & Courses:
+
+Online courses on Udemy: LangChain + Hugging Face (Krish Naik), Python ML Bootcamp (Jose Portilla)
+
+Workshops : Just Robotics – robotics, IoT, electronics

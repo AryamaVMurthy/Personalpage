@@ -1,0 +1,200 @@
+/* Text Analyzer Page Styles */
+#analyzer-section {
+    position: relative;
+    min-height: 100vh;
+    width: 100%;
+    padding: 7rem 2rem 2rem;
+    background: linear-gradient(to bottom, var(--dark-bg), #141431);
+    z-index: 1;
+}
+
+.analyzer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: rgba(15, 23, 42, 0.7);
+    border-radius: 15px;
+    padding: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primary-color);
+    backdrop-filter: blur(10px);
+}
+
+.analyzer-container h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    text-shadow: 0 0 10px rgba(0, 168, 255, 0.6);
+}
+
+.analyzer-input {
+    margin-bottom: 2rem;
+}
+
+#text-input {
+    width: 100%;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    padding: 1rem;
+    color: var(--text);
+    font-size: 1rem;
+    resize: vertical;
+    outline: none;
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+}
+
+#text-input:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 15px rgba(112, 71, 217, 0.5);
+}
+
+#analyze-btn {
+    display: block;
+    margin: 0 auto;
+    padding: 0.75rem 2rem;
+    font-size: 1.1rem;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    border: none;
+    color: white;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+#analyze-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 168, 255, 0.5);
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.result-section {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 1.5rem;
+    border-left: 3px solid var(--primary-color);
+}
+
+.result-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-bottom: 1px solid rgba(0, 168, 255, 0.3);
+    padding-bottom: 0.5rem;
+}
+
+.result-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    gap: 1rem;
+}
+
+.result-card {
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid rgba(0, 168, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary-color);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.result-icon {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.result-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-title {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+}
+
+.result-value {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.result-table {
+    width: 100%;
+    overflow-x: auto;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.result-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.result-table th {
+    background: rgba(0, 0, 0, 0.3);
+    color: var(--primary-color);
+    padding: 0.75rem;
+    text-align: left;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.result-table td {
+    padding: 0.75rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.result-table tr:hover td {
+    background: rgba(0, 168, 255, 0.1);
+}
+
+/* Scrollbar styling */
+.result-table::-webkit-scrollbar {
+    width: 6px;
+}
+
+.result-table::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.result-table::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 3px;
+}
+
+@media (max-width: 768px) {
+    .results-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .analyzer-container {
+        padding: 1rem;
+    }
+    
+    .result-section h2 {
+        font-size: 1.1rem;
+    }
+} 

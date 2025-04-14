@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Analyzer - Aryama Murthy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="analyzer-style.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div id="electric-grid"></div>
+        <div id="particles"></div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="nav-container">
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-button"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+
+    <!-- Text Analyzer Section -->
+    <section id="analyzer-section">
+        <div class="analyzer-container">
+            <h1><i class="fas fa-code"></i> Text Analyzer</h1>
+            
+            <div class="analyzer-input">
+                <textarea id="text-input" placeholder="Enter or paste text..."></textarea>
+                <button id="analyze-btn" class="glow-button"><i class="fas fa-cogs"></i> Analyze Text</button>
+            </div>
+            
+            <div class="results-container">
+                <div class="result-section">
+                    <h2><i class="fas fa-font"></i> Character Analysis</h2>
+                    <div id="char-results" class="result-content">
+                        <div class="result-card">
+                            <div class="result-icon"><i class="fas fa-font"></i></div>
+                            <div class="result-data">
+                                <span class="result-title">Letters</span>
+                                <span id="letter-count" class="result-value">0</span>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon"><i class="fas fa-file-word"></i></div>
+                            <div class="result-data">
+                                <span class="result-title">Words</span>
+                                <span id="word-count" class="result-value">0</span>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon"><i class="fas fa-grip-lines"></i></div>
+                            <div class="result-data">
+                                <span class="result-title">Spaces</span>
+                                <span id="space-count" class="result-value">0</span>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon"><i class="fas fa-level-down-alt"></i></div>
+                            <div class="result-data">
+                                <span class="result-title">Newlines</span>
+                                <span id="newline-count" class="result-value">0</span>
+                            </div>
+                        </div>
+                        <div class="result-card">
+                            <div class="result-icon"><i class="fas fa-asterisk"></i></div>
+                            <div class="result-data">
+                                <span class="result-title">Special Symbols</span>
+                                <span id="special-count" class="result-value">0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="result-section">
+                    <h2><i class="fas fa-user"></i> Pronouns Count</h2>
+                    <div id="pronoun-results" class="result-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Pronoun</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody id="pronoun-table-body">
+                                <!-- Results will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="result-section">
+                    <h2><i class="fas fa-directions"></i> Prepositions Count</h2>
+                    <div id="preposition-results" class="result-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Preposition</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody id="preposition-table-body">
+                                <!-- Results will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                
+                <div class="result-section">
+                    <h2><i class="fas fa-quote-right"></i> Indefinite Articles Count</h2>
+                    <div id="article-results" class="result-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Article</th>
+                                    <th>Count</th>
+                                </tr>
+                            </thead>
+                            <tbody id="article-table-body">
+                                <!-- Results will be inserted here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JavaScript for Text Analysis -->
+    <script src="analyzer.js"></script>
+</body>
+</html> 

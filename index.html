@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aryama Murthy - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+</head>
+<body>
+    <!-- Background Elements -->
+    <div class="background-elements">
+        <div id="electric-grid"></div>
+        <div id="particles"></div>
+    </div>
+
+    <!-- Navigation and Main Buttons -->
+    <div class="nav-container">
+        <div class="nav-buttons">
+            <button class="nav-button" id="about-btn" data-panel="about-content">About</button>
+            <button class="nav-button" id="education-btn" data-panel="education-content">Education</button>
+            <button class="nav-button" id="skills-btn" data-panel="skills-content">Skills</button>
+            <button class="nav-button" id="gallery-btn" data-panel="pictures-content">Gallery</button>
+            <button class="nav-button" id="cv-btn" data-panel="cv-content">CV</button>
+            <a href="text-analyzer.html" class="nav-button" id="analyzer-btn"><i class="fas fa-code"></i> Text Analyzer</a>
+        </div>
+    </div>
+
+    <!-- Main 3D View (First Thing Visible) -->
+    <section id="main-view">
+    <div id="simulation-container"></div>
+    
+        <!-- Header with Name and Profile -->
+        <div class="main-header">
+            <div class="header-profile-pic"></div>
+            <h1>Aryama V Murthy</h1>
+        </div>
+        
+        <!-- Scroll Down Button -->
+        <div class="scroll-button-container">
+            <button id="scroll-to-profile" class="glow-button">
+                <i class="fas fa-chevron-down"></i>
+                <span>Explore Profile</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- Profile Section (Appears when scrolling down) -->
+    <section id="profile-section" class="profile-section">
+        <!-- Scroll to Top Button -->
+        <div class="scroll-top-container">
+            <button id="scroll-to-top" class="glow-button">
+                <i class="fas fa-chevron-up"></i>
+                <span>Back to Top</span>
+            </button>
+        </div>
+
+        <div class="profile-container">
+            <div class="profile-header">
+                <div class="profile-image-container">
+                    <div class="profile-image"></div>
+                </div>
+                <div class="profile-title">
+                    <h1>Aryama Murthy</h1>
+                    <p class="tagline">Tech products and AI enthusiast</p>
+                </div>
+            </div>
+            
+            <div class="profile-content">
+                <div class="profile-block">
+                    <h3><i class="fas fa-user"></i> About Me</h3>
+                    <p>First-year B.Tech Computer Science student at IIIT Hyderabad, passionate about using technology to solve real-world problems, especially in AI and Machine Learning.</p>
+                    <p>I'm a quick learner with a curious mind, adaptable to new technologies, and deeply motivated to build solutions that scale and make an impact.</p>
+                </div>
+                
+                <div class="profile-block">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <ul>
+                        <li>B.Tech in Computer Science - IIIT Hyderabad (2024-2028)</li>
+                        <li>RV PU College - 96.33% in 12th Board</li>
+                        <li>JEE Mains 2024 - 99.9347%ile (AIR 1205)</li>
+                        <li>JEE Advanced 2024 - AIR 3576</li>
+                    </ul>
+                </div>
+                
+                <div class="profile-block">
+                    <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                    <ul>
+                        <li>Agri-India Hackathon Winner in mechanised farming (1 lakh rupees grant)</li>
+                        <li>Virtual Labs Felicity Hackathon - 1st Place</li>
+                        <li>HackIIIT Hackathon - Most Fun Product Award</li>
+                    </ul>
+                </div>
+                
+                <div class="profile-block">
+                    <h3><i class="fas fa-code"></i> Technical Skills</h3>
+                    <ul>
+                        <li>AI & Machine Learning: PyTorch, TensorFlow, Hugging Face</li>
+                        <li>Programming: Python, C, C++, JavaScript</li>
+                        <li>Web Development(with AI tools): React, Next.js, FastAPI, Flask</li>
+                        <li>IoT & Robotics: ESP32, Raspberry Pi, Arduino</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Content Panels -->
+    <div id="about-content" class="content-panel">
+        <div class="panel-header">
+            <h2><i class="fas fa-user"></i> About Me</h2>
+            <button class="close-button" onclick="hidePanel('about-content')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="panel-content">
+            <div class="text-block">
+                <h3><i class="fas fa-info-circle"></i> Introduction</h3>
+            <p>
+                Hi! I'm Aryama Vinay Murthy, a first-year B.Tech Computer Science student at IIIT Hyderabad (Class of 2028). I'm from Bengaluru, where I've grown up and built the foundation of my curiosity and drive to innovate.
+                </p>
+            </div>
+            
+            <div class="text-block">
+                <h3><i class="fas fa-laptop-code"></i> Passion & Interests</h3>
+                <ul>
+                    <li>Using technology to solve real-world problems</li>
+                    <li>Artificial Intelligence and Machine Learning</li>
+                    <li>Product Development</li>
+                    <li>Building AI-powered applications and robotics systems</li>
+                    <li>Leading projects from idea to execution</li>
+                </ul>
+            </div>
+            
+            <div class="text-block">
+                <h3><i class="fas fa-briefcase"></i> Career Aspirations</h3>
+                <p>I aspire to be an entrepreneur. I have a strong interest in startups, business and management. I've always been excited about creating impactful products and envision starting my own company in the future.</p>
+            </div>
+            
+            <div class="text-block">
+                <h3><i class="fas fa-heart"></i> Hobbies</h3>
+                <ul>
+                    <li>Playing tennis for my college team</li>
+                    <li>Performing Carnatic flute music</li>
+                    <li>Chess (FIDE rating of 1464)</li>
+                    <li>Photography</li>
+                    <li>Following finance and global affairs</li>
+                </ul>
+            </div>
+            
+            <div class="text-block">
+                <h3><i class="fas fa-lightbulb"></i> Personal Traits</h3>
+                <ul>
+                    <li>Quick learner and deeply curious</li>
+                    <li>Adaptable and motivated to build scalable solutions</li>
+                    <li>Passionate about visionary and futuristic thinking</li>
+                    <li>Enjoys collaborative environments and team activities</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="education-content" class="content-panel">
+        <div class="panel-header">
+            <h2><i class="fas fa-graduation-cap"></i> Education & Achievements</h2>
+            <button class="close-button" onclick="hidePanel('education-content')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="panel-content">
+            <div class="text-block">
+                <h3><i class="fas fa-university"></i> Education</h3>
+                <ul>
+                    <li><strong>B.Tech in Computer Science</strong> - IIIT Hyderabad (Class of 2028)</li>
+                    <li><strong>Pre-University (PU)</strong> - RV PU College
+                        <ul>
+                            <li>96.33% in 12th Board Exam</li>
+                            <li>99.9347%ile (AIR 1205) in JEE Mains 2024</li>
+                            <li>AIR 3576 in JEE Advanced 2024</li>
+                            <li>State Topper in Physics Olympiad</li>
+                        </ul>
+                    </li>
+                    <li><strong>Schooling</strong> - Sri Kumarans Children's Home
+                        <ul>
+                            <li>94% in 10th Board Exam</li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="text-block">
+                <h3><i class="fas fa-trophy"></i> Achievements</h3>
+                <ul>
+                    <li><strong>Agri-India Hackathon Winner (1 lakh rupees grant)</strong>
+                        <ul>
+                            <li>Led a team in the Mechanised Farming category</li>
+                            <li>Developed a robotic solution for weed removal and disease detection</li>
+                        </ul>
+                    </li>
+                    <li><strong>Virtual Labs Felicity Hackathon - 1st Place</strong>
+                        <ul>
+                            <li>Developed One-Click-Labs</li>
+                            <li>Streamlined the creation of virtual lab experiments and study materials for professors</li>
+                        </ul>
+                    </li>
+                    <li><strong>HackIIIT Hackathon - Most Fun Product Award</strong>
+                        <ul>
+                            <li>Created the AI Meme Maker project using monty cloud's MoyaAI platform</li>
+                        </ul>
+                    </li>
+            </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="skills-content" class="content-panel">
+        <div class="panel-header">
+            <h2><i class="fas fa-code"></i> Technical Skills</h2>
+            <button class="close-button" onclick="hidePanel('skills-content')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="panel-content">
+            <div class="text-block">
+                <h3><i class="fas fa-info-circle"></i> Overview</h3>
+            <p>
+                As a student passionate about technology and innovation, I've developed a solid foundation across multiple domains, with a focus on AI, robotics, and full-stack development. I approach most of my projects using AI-assisted coding tools and copilots, enabling rapid prototyping and efficient development even in areas where I'm still gaining depth.
+            </p>
+            <p>
+                Started coding and prototyping with robotics tools in 5th–6th grade with Python, took a 3-year break for JEE prep, and resumed with a new AI-first approach at IIIT Hyderabad.
+                I focus on concepts, abstraction, and building products, using AI tools to code efficiently. Not interested in low-level intricacies—I'm a hard worker driven by innovation and outcomes.
+            </p>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3><i class="fas fa-robot"></i> AI & Machine Learning</h3>
+                    <ul>
+                        <li><strong>Proficiency:</strong> Intermediate (Applied with AI tools)</li>
+                        <li><strong>Libraries:</strong> PyTorch, TensorFlow, Hugging Face, Scikit-learn, OpenCV, Pandas, NumPy</li>
+                        <li><strong>Concepts:</strong> Fine-tuning (LoRA/QLoRA), RAG, Quantization, CNNs, RNNs, multi-agent systems</li>
+                        <li><strong>Frameworks:</strong> LangChain, LangGraph, FAISS, ChromaDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-laptop-code"></i> Programming Languages</h3>
+                    <ul>
+                        <li><strong>Proficiency:</strong> Beginner–Intermediate</li>
+                        <li>Python, C, C++, JavaScript, Bash, SQL, TypeScript, HTML, x86 Assembly (basics)</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-cogs"></i> Software Development(with enhanced productivity with AI tools)</h3>
+                    <ul>
+                        <li><strong>Proficiency:</strong> Beginner–Intermediate (AI-assisted)</li>
+                        <li><strong>Frontend:</strong> React, Next.js, React Native</li>
+                        <li><strong>Backend:</strong> FastAPI, Flask, Express.js</li>
+                        <li><strong>Databases:</strong> MongoDB, PostgreSQL, Firebase</li>
+                        <li><strong>Tools:</strong> Git, Docker, AI copilots for rapid prototyping</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h3><i class="fas fa-microchip"></i> IoT & Robotics</h3>
+                    <ul>
+                        <li><strong>Proficiency:</strong> Beginner–Intermediate</li>
+                        <li><strong>Platforms:</strong> ESP32, Raspberry Pi, Arduino</li>
+                        <li><strong>Applications:</strong> Motion tracking, edge AI, robot navigation</li>
+                        <li><strong>Projects:</strong><ul><li>Agricultural robot prototype for weed and disease detection</li>
+                            <li>real-time exercise tracking system using gyroscope & accelerometer data from ESP32.	</li>
+                            <li> top view vision-guided autonomous robot. Enabled real-time obstacle avoidance and point-to-point navigation</li>
+                        </ul></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-calculator"></i> Math & Core CS</h3>
+                <ul>
+                    <li>Discrete Math, Linear Algebra, Probability, Real Analysis, Calculus</li>
+                    <li>Data Structures & Algorithms, Computer Systems, IoT</li>
+                </ul>
+            </div>
+            <div class="skill-category">
+                <h3><i class="fas fa-book"></i> Learning & Courses</h3>
+                <ul>
+                    <li><strong>Online courses:</strong> LangChain + Hugging Face (Krish Naik), Python ML Bootcamp (Jose Portilla)</li>
+                    <li><strong>Workshops:</strong> Just Robotics – robotics, IoT, electronics</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div id="pictures-content" class="content-panel">
+        <div class="panel-header">
+            <h2><i class="fas fa-image"></i> Gallery</h2>
+            <button class="close-button" onclick="hidePanel('pictures-content')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="panel-content">
+            <div class="gallery">
+                <div class="gallery-item">
+                    <p>Profile:</p>
+                    <img src="assets/profile_pic.png" alt="Profile Picture">
+                </div>
+                <div class="gallery-item">
+                    <p>My Room:</p>
+                    <img src="assets/room.jpg" alt="My Room">
+                </div>
+                <div class="gallery-item">
+                    <p>Diwali Celebrations:</p>
+                    <img src="assets/diwali.jpg" alt="Diwali Celebration">
+                </div>
+                <div class="gallery-item">
+                    <p>Archery Practice:</p>
+                    <img src="assets/archery.jpg" alt="Archery Practice">
+                </div>
+                <div class="gallery-item">
+                    <p>Lakeside View:</p>
+                    <img src="assets/lake.png" alt="Beautiful Lake View">
+                </div>
+                <div class="gallery-item">
+                    <p>Tennis Match:</p>
+                    <img src="assets/tennis.png" alt="Playing Tennis">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="cv-content" class="content-panel">
+        <div class="panel-header">
+            <h2><i class="fas fa-file-alt"></i> Curriculum Vitae</h2>
+            <button class="close-button" onclick="hidePanel('cv-content')"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="panel-content">
+            <p>Click the button below to download my CV.</p>
+            <a href="assets/Resume.pdf" target="_blank" download class="download-btn">
+                <i class="fas fa-download"></i> Download CV (PDF)
+            </a>
+        </div>
+    </div>
+
+    <!-- Three.js CDN -->
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://unpkg.com/three@0.164.1/build/three.module.js",
+                "three/addons/": "https://unpkg.com/three@0.164.1/examples/jsm/"
+            }
+        }
+    </script>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
