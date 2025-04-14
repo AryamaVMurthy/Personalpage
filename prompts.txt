@@ -1,0 +1,26 @@
+
+Now how can i publish this to github io pages,
+remove that hint in the textbox saying 10000+ words recommended
+ensure that the website also checks the same things for text-analyser the same exact list of parts of speech like pronouns etc,
+Give the list of pronouns, prepositions etc also for assumptions ,
+this is very bad, please look at the website once and make it completely user friendly, keep closing option for every popup and dont put multiple popups together and also don't open popups untill asked.
+Also the scroll down option should be there in the page with the blocks and not the first page.
+
+also remove the first page.
+
+also here is my linkedin and github and mail, please add them instead of placeholders.
+@https://linkedin.com/in/aryama-murthy-b6188722b 
+@https://github.com/AryamaVMurthy 
+aryamavmurthy@gmail.com
+
+
+ENSURE BEST USER EXPERIENCE WITH MOST FUTURISTIC 3D THEME AS IN HERE.
+THINK ABOUT USER EXPERIENCE BEFORE DOING ANYTHING
+Look at the whole codebase and understand it.
+
+I want to make the main 3D page not rotating as a whole.
+Just make each block rotate on its own like a solar system format but slowly and keep the labels non rotating.
+then make the lightning connecting the blocks more prominent.
+Also make the text in every part into blocks and bullet points.
+
+Then make it such that when you scroll down in the main page, you can see a page with profile pic and some basic details about me
